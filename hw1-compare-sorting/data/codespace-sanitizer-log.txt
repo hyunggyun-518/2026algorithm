@@ -1,0 +1,5 @@
+make: Entering directory '/work/hw1-compare-sorting'
+cc -std=c17 -Wall -Wextra -Wpedantic -g -O1 -fsanitize=address,undefined -Isrc tests/test_sort.c src/common.c src/insertionSort.c src/mergeSort.c src/heapSort.c -o tests/sanitize.out
+./tests/sanitize.out
+PASS: 2335606 assertions; exhaustive ternary inputs n=0..8; five shapes n=0..513; extremes; stability; counters.
+make: Leaving directory '/work/hw1-compare-sorting'
