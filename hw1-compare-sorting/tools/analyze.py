@@ -59,6 +59,10 @@ def main():
         large_rows.append(row)
     bigtable=table(['n','삽입 ms (직전 대비)','병합 ms (직전 대비)','힙 ms (직전 대비)'],large_rows)
     slope={a:math.log2(g['random',65536,a]['median_ms']/g['random',8192,a]['median_ms'])/3 for a in ALGOS}
+    full_slope={a:math.log2(g['random',1048576,a]['median_ms']/g['random',8192,a]['median_ms'])/7 for a in ALGOS}
+    last_insertion=g['random',1048576,'insertion']['median_ms']/1000
+    faster_64=min(['merge','heap'],key=lambda a:g['random',65536,a]['median_ms'])
+    faster_1m=min(['merge','heap'],key=lambda a:g['random',1048576,a]['median_ms'])
     heap_ratio=r('random','insertion')['median_ms']/r('random','heap')['median_ms']
     md=f'''# 과제 1. Compare sorting
 
@@ -263,9 +267,10 @@ buffer_bytes는 명시적인 원소 저장 공간이다. 삽입·힙의 임시 �
 
 ## 6. 번외: 큰 입력에서의 시간 증가
 
-전체 세 정렬을 무작위 8,192~65,536개로 비교하고, 병합·힙은 1,048,576개까지 확장했다.
+세 정렬 모두 무작위 8,192~1,048,576개를 두 배씩 늘려 직접 실행했다.
 시드 3개에 각 3회로 조건당 표본은 9개다. 시드와 시간 측정 방식은 기본 실험과 같다.
-삽입 정렬의 131,072개 이상은 실험 비용을 제한하려고 측정하지 않았다. 실패나 시간 제한 초과를 뜻하지 않는다.
+삽입 정렬의 사전 생략 조건을 제거하고 세 정렬을 같은 실행에서 재측정했다.
+모든 크기에서 정렬 결과 검증을 통과했으며, 이 범위에는 실패나 미측정 항목이 없다.
 
 {bigtable}
 
@@ -284,8 +289,10 @@ O(2ⁿ) 같은 지수 시간과는 다르다. 크기를 2배씩 늘린 실험에
 8,192→65,536 구간의 양 끝점으로 계산한 유효 지수 log(T₂/T₁)/log(n₂/n₁)는
 삽입 {slope['insertion']:.2f}, 병합 {slope['merge']:.2f}, 힙 {slope['heap']:.2f}였다.
 이는 해당 구간의 경험적 요약이며 시간복잡도의 증명이나 모든 크기에서의 예측식은 아니다.
-65,536개에서는 힙이 병합보다 빨랐지만 1,048,576개에서는 병합이 약간 앞섰다.
-두 구현 모두 같은 차수여도 크기에 따라 순위가 달라질 수 있다. 이러한 차이의 원인은 추가 실험이 필요하다.
+전체 8,192→1,048,576 구간의 유효 지수는 삽입 {full_slope['insertion']:.2f},
+병합 {full_slope['merge']:.2f}, 힙 {full_slope['heap']:.2f}다. 삽입의 마지막 중앙값은 {last_insertion:.1f}초였다.
+병합·힙 중 65,536개에서는 {LABEL[faster_64]}, 1,048,576개에서는 {LABEL[faster_1m]}이 빨랐다.
+실행 시간이 길다는 사실은 정렬 실패를 뜻하지 않으며, 측정 범위 밖의 실패 경계는 확인하지 않았다.
 
 <!-- PAGE -->
 

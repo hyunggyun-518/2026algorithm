@@ -7,6 +7,7 @@ static volatile unsigned long consumed=0;
 static void fail(const char *message){fprintf(stderr,"%s\n",message);exit(1);}
 int main(int argc, char **argv) {
     int large = argc > 1 && strcmp(argv[1], "--large") == 0;
+    setvbuf(stdout, NULL, _IOLBF, 0);
     const size_t smallSizes[]={256,512,1024,2048,4096,8192};
     const size_t largeSizes[]={8192,16384,32768,65536,131072,262144,524288,1048576};
     const size_t *sizes=large?largeSizes:smallSizes;
@@ -15,7 +16,7 @@ int main(int argc, char **argv) {
         size_t n=sizes[z];Record *input=malloc(n*sizeof(Record)),*work=malloc(n*sizeof(Record));
         if(!input||!work) fail("allocation failure");
         makeInput(input,n,kind,20260921u+seed);
-        size_t first=(large && n>65536)?1:0;
+        size_t first=0;
         size_t count=3-first;
         Stats stats[3];int stable[3];size_t batch[3];
         for(size_t k=first;k<3;k++) {
