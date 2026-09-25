@@ -3,7 +3,7 @@
 **삽입 · 병합 · 힙 정렬의 입력 조건별 성능 비교**  
 2022193003 김형균
 
-GitHub 저장소: https://github.com/hyunggyun-518/2026algorithm
+GitHub 저장소: https://github.com/hyunggyun-518/2026algorithm/tree/feature/hw1-compare-sorting
 
 ## 1. 목적과 설계
 
