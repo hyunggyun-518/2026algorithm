@@ -62,5 +62,5 @@
 <circle cx="868.0" cy="172.48353819181082" r="3.5" fill="#14806f"/>
 <text x="388" y="333" font-size="13" fill="#14806f">heap</text>
 <text x="8" y="43" font-size="12">CPU ms</text>
-<text x="868" y="333" text-anchor="end" font-size="12">n (log2); time (log10); median + IQR</text>
+<text x="868" y="333" text-anchor="end" font-size="12">n (log2); time (log10); median; Q1-Q3</text>
 </svg>

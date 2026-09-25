@@ -21,7 +21,8 @@ make bench
 - 측정 조건: `report/METHOD.md`
 - 실행 결과: `data/summary.csv`, `data/environment.txt`
 
-그래프와 Markdown은 `python3 tools/analyze.py`로 다시 만든다(표준 모듈만 사용).
+요약 CSV·그래프·`report/RESULTS.md`는 `python3 tools/analyze.py`로 다시 만든다(표준 모듈만 사용).
+`report/REPORT.md`와 `report/AI_LEARNING.md`는 직접 편집하는 원본으로, 분석 실행 시 덮어쓰지 않는다.
 PDF는 `tools/render_pdf.cjs`로 Markdown과 Mermaid를 렌더링한다.
 PDF 제작만을 위한 별도 환경에는 Node.js의 marked/playwright와 Mermaid 10.9.3,
 Chromium 계열 브라우저가 필요하다. 정렬·테스트·측정에는 필요하지 않다.
