@@ -1,0 +1,5 @@
+Full large-input rerun: process exit code 0.
+216 measured rows: 8 sizes x 3 algorithms x 3 seeds x 3 repetitions.
+All measured arrays passed ordering, record preservation and applicable stability checks.
+No runtime error or failed input size observed through n=1048576.
+Same Apple M2 environment as environment.txt. No size-based insertion-sort exclusion.

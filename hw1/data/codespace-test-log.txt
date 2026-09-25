@@ -1,0 +1,4 @@
+make: Entering directory '/work/hw1-compare-sorting'
+./tests/test_sort.out
+PASS: 2335606 assertions; exhaustive ternary inputs n=0..8; five shapes n=0..513; extremes; stability; counters.
+make: Leaving directory '/work/hw1-compare-sorting'

@@ -1,0 +1,11 @@
+Date: 2026-09-21
+CPU: Apple M2
+macOS-27.0-arm64-arm-64bit-Mach-O
+Apple clang version 21.0.0 (clang-2100.3.34.2)
+Target: arm64-apple-darwin27.0.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+Flags: -std=c17 -Wall -Wextra -Wpedantic -O2
+Timer: clock() CPU time
+Record bytes: 16

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" font-family="Arial, sans-serif">
+<rect width="900" height="340" fill="white"/>
+<text x="78" y="25" font-size="18" fill="#152f44">Input size and runtime</text>
+<line x1="78" y1="280.0" x2="868" y2="280.0" stroke="#e0e6eb"/>
+<text x="68" y="284.0" text-anchor="end" font-size="12">0.001</text>
+<line x1="78" y1="235.0" x2="868" y2="235.0" stroke="#e0e6eb"/>
+<text x="68" y="239.0" text-anchor="end" font-size="12">0.01</text>
+<line x1="78" y1="190.0" x2="868" y2="190.0" stroke="#e0e6eb"/>
+<text x="68" y="194.0" text-anchor="end" font-size="12">0.1</text>
+<line x1="78" y1="145.0" x2="868" y2="145.0" stroke="#e0e6eb"/>
+<text x="68" y="149.0" text-anchor="end" font-size="12">1</text>
+<line x1="78" y1="100.0" x2="868" y2="100.0" stroke="#e0e6eb"/>
+<text x="68" y="104.0" text-anchor="end" font-size="12">10</text>
+<line x1="78" y1="55.0" x2="868" y2="55.0" stroke="#e0e6eb"/>
+<text x="68" y="59.0" text-anchor="end" font-size="12">100</text>
+<text x="78.0" y="301" text-anchor="middle" font-size="11">256</text>
+<text x="236.0" y="301" text-anchor="middle" font-size="11">512</text>
+<text x="394.0" y="301" text-anchor="middle" font-size="11">1,024</text>
+<text x="552.0" y="301" text-anchor="middle" font-size="11">2,048</text>
+<text x="710.0" y="301" text-anchor="middle" font-size="11">4,096</text>
+<text x="868.0" y="301" text-anchor="middle" font-size="11">8,192</text>
+<polyline points="78.0,231.2599805678563 236.0,206.72633038029636 394.0,180.60955992727216 552.0,153.55466890289023 710.0,127.03415762383949 868.0,99.92392955955313" fill="none" stroke="#bc4b36" stroke-width="2.6"/>
+<line x1="78.0" y1="231.38208641834692" x2="78.0" y2="230.39453356298017" stroke="#bc4b36" stroke-width="2"/>
+<circle cx="78.0" cy="231.2599805678563" r="3.5" fill="#bc4b36"/>
+<line x1="236.0" y1="207.10878576055148" x2="236.0" y2="206.62883876238112" stroke="#bc4b36" stroke-width="2"/>
+<circle cx="236.0" cy="206.72633038029636" r="3.5" fill="#bc4b36"/>
+<line x1="394.0" y1="180.8764072659796" x2="394.0" y2="180.2800961281483" stroke="#bc4b36" stroke-width="2"/>
+<circle cx="394.0" cy="180.60955992727216" r="3.5" fill="#bc4b36"/>
+<line x1="552.0" y1="153.8638580823487" x2="552.0" y2="153.23105354467427" stroke="#bc4b36" stroke-width="2"/>
+<circle cx="552.0" cy="153.55466890289023" r="3.5" fill="#bc4b36"/>
+<line x1="710.0" y1="127.20769099050761" x2="710.0" y2="126.80301137842687" stroke="#bc4b36" stroke-width="2"/>
+<circle cx="710.0" cy="127.03415762383949" r="3.5" fill="#bc4b36"/>
+<line x1="868.0" y1="100.14712680541811" x2="868.0" y2="99.80940851382397" stroke="#bc4b36" stroke-width="2"/>
+<circle cx="868.0" cy="99.92392955955313" r="3.5" fill="#bc4b36"/>
+<text x="78" y="333" font-size="13" fill="#bc4b36">insertion</text>
+<polyline points="78.0,253.37457612380626 236.0,233.68326499841973 394.0,212.0195424959105 552.0,193.19754795946233 710.0,176.872421964532 868.0,161.2455328295343" fill="none" stroke="#2264a8" stroke-width="2.6"/>
+<line x1="78.0" y1="254.0252865353985" x2="78.0" y2="251.83987722970983" stroke="#2264a8" stroke-width="2"/>
+<circle cx="78.0" cy="253.37457612380626" r="3.5" fill="#2264a8"/>
+<line x1="236.0" y1="234.97391252085978" x2="236.0" y2="233.49802296680255" stroke="#2264a8" stroke-width="2"/>
+<circle cx="236.0" cy="233.68326499841973" r="3.5" fill="#2264a8"/>
+<line x1="394.0" y1="212.46872125996572" x2="394.0" y2="211.59878904125733" stroke="#2264a8" stroke-width="2"/>
+<circle cx="394.0" cy="212.0195424959105" r="3.5" fill="#2264a8"/>
+<line x1="552.0" y1="193.71672035256165" x2="552.0" y2="192.94304038861196" stroke="#2264a8" stroke-width="2"/>
+<circle cx="552.0" cy="193.19754795946233" r="3.5" fill="#2264a8"/>
+<line x1="710.0" y1="177.39652048246245" x2="710.0" y2="176.60077700053898" stroke="#2264a8" stroke-width="2"/>
+<circle cx="710.0" cy="176.872421964532" r="3.5" fill="#2264a8"/>
+<line x1="868.0" y1="161.52803632751707" x2="868.0" y2="160.56747301031112" stroke="#2264a8" stroke-width="2"/>
+<circle cx="868.0" cy="161.2455328295343" r="3.5" fill="#2264a8"/>
+<text x="233" y="333" font-size="13" fill="#2264a8">merge</text>
+<polyline points="78.0,251.9025202656126 236.0,236.99838023174243 394.0,220.04289645699276 552.0,203.59166016094875 710.0,187.9604659546004 868.0,172.48353819181082" fill="none" stroke="#14806f" stroke-width="2.6"/>
+<line x1="78.0" y1="252.89313910763607" x2="78.0" y2="250.18812655324302" stroke="#14806f" stroke-width="2"/>
+<circle cx="78.0" cy="251.9025202656126" r="3.5" fill="#14806f"/>
+<line x1="236.0" y1="237.46813423060186" x2="236.0" y2="236.28567794357096" stroke="#14806f" stroke-width="2"/>
+<circle cx="236.0" cy="236.99838023174243" r="3.5" fill="#14806f"/>
+<line x1="394.0" y1="220.3367458984366" x2="394.0" y2="219.4276822892481" stroke="#14806f" stroke-width="2"/>
+<circle cx="394.0" cy="220.04289645699276" r="3.5" fill="#14806f"/>
+<line x1="552.0" y1="203.94732052635015" x2="552.0" y2="203.40083289422134" stroke="#14806f" stroke-width="2"/>
+<circle cx="552.0" cy="203.59166016094875" r="3.5" fill="#14806f"/>
+<line x1="710.0" y1="188.03570828556013" x2="710.0" y2="187.6359834819453" stroke="#14806f" stroke-width="2"/>
+<circle cx="710.0" cy="187.9604659546004" r="3.5" fill="#14806f"/>
+<line x1="868.0" y1="172.62284009077197" x2="868.0" y2="171.7725011620838" stroke="#14806f" stroke-width="2"/>
+<circle cx="868.0" cy="172.48353819181082" r="3.5" fill="#14806f"/>
+<text x="388" y="333" font-size="13" fill="#14806f">heap</text>
+<text x="8" y="43" font-size="12">CPU ms</text>
+<text x="868" y="333" text-anchor="end" font-size="12">n (log2); time (log10); median; Q1-Q3</text>
+</svg>
