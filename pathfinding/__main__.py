@@ -1,5 +1,6 @@
 from pathfinding import Grid
 from pathfinding.astar import astar
+from pathfinding.bidirectional import bidirectional_dijkstra
 from pathfinding.dijkstra import dijkstra
 
 
@@ -8,7 +9,7 @@ grid = Grid.from_rows(
     start=(0, 0),
     goal=(0, 2),
 )
-for name, search in (("Dijkstra", dijkstra), ("A*", astar)):
+for name, search in (("Dijkstra", dijkstra), ("A*", astar), ("Bidirectional Dijkstra", bidirectional_dijkstra)):
     result = search(grid)
     print(f"{name}: reached={result.reached}, cost={result.cost}")
     print(f"path={result.path}")
