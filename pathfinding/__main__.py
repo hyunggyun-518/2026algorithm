@@ -1,4 +1,5 @@
 from pathfinding import Grid
+from pathfinding.astar import astar
 from pathfinding.dijkstra import dijkstra
 
 
@@ -7,8 +8,8 @@ grid = Grid.from_rows(
     start=(0, 0),
     goal=(0, 2),
 )
-result = dijkstra(grid)
-print(f"reached={result.reached}")
-print(f"cost={result.cost}")
-print(f"path={result.path}")
-print(f"expanded={result.expanded}")
+for name, search in (("Dijkstra", dijkstra), ("A*", astar)):
+    result = search(grid)
+    print(f"{name}: reached={result.reached}, cost={result.cost}")
+    print(f"path={result.path}")
+    print(f"expanded={result.expanded}")
