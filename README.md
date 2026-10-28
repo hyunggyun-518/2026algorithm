@@ -2,7 +2,7 @@
 
 2026-2 고급알고리즘 개인프로젝트. 같은 가중치 격자에서 Dijkstra, A*, 양방향 Dijkstra의 최적 경로와 탐색 비용을 비교한다.
 
-현재는 **6단계: 측정 도구와 예비실험**까지 진행했다. 세 탐색 방법, 핵심 72개와 크기 보조용 추가 24개 입력 사례, 측정 규약을 준비했다. 대표 3개 사례의 예비실험만 실행했으며, 본 실험의 성능 비교는 아직 진행하지 않았다.
+현재는 **7단계: 본 실험 돌리기**까지 진행했다. 세 탐색 방법의 핵심 72개 사례에서 648회 실행한 원시 결과를 검증·저장했다. 크기 보조 추가 24개 사례와 유형별 성능 해석은 8단계에서 진행한다.
 
 ## 실행 환경
 
@@ -17,7 +17,7 @@ make test
 프로젝트 테스트만 실행:
 
 ```sh
-python3 -m unittest tests.test_grid tests.test_dijkstra tests.test_astar tests.test_bidirectional tests.test_maps -v
+python3 -m unittest tests.test_grid tests.test_dijkstra tests.test_astar tests.test_bidirectional tests.test_maps tests.test_measure tests.test_protocol tests.test_verify -v
 ```
 
 세 탐색 방법의 예제 실행:
@@ -26,7 +26,7 @@ python3 -m unittest tests.test_grid tests.test_dijkstra tests.test_astar tests.t
 python3 -m pathfinding
 ```
 
-예제에서 세 방법의 최적 비용은 모두 `6`이고, 출발점 `(0, 0)`에서 아래쪽 통로를 거쳐 목표점 `(0, 2)`에 도달한다. A*는 목표까지의 맨해튼 거리와 지도의 최소 진입 비용으로 남은 비용의 하한을 계산한다. 양방향 Dijkstra는 반대쪽에서의 거리도 계산하고, 첫 접촉이 아닌 안전한 종료 조건을 사용한다. 작은 격자 324개를 빠짐없이, 무작위 가중치 격자 300개를 별도로 검사해 세 방식의 최적 비용과 경로 유효성을 확인했다. 방식별 성능은 6단계에서 측정 규칙을 고정한 뒤 7~8단계에서 평가한다.
+예제에서 세 방법의 최적 비용은 모두 `6`이고, 출발점 `(0, 0)`에서 아래쪽 통로를 거쳐 목표점 `(0, 2)`에 도달한다. A*는 목표까지의 맨해튼 거리와 지도의 최소 진입 비용으로 남은 비용의 하한을 계산한다. 양방향 Dijkstra는 반대쪽에서의 거리도 계산하고, 첫 접촉이 아닌 안전한 종료 조건을 사용한다. 작은 격자 324개를 빠짐없이, 무작위 가중치 격자 300개를 별도로 검사해 세 방식의 최적 비용과 경로 유효성을 확인했다. 7단계에서 고정 규칙에 따른 원시 성능 데이터를 확보했고, 조건별 해석은 8단계에서 진행한다.
 
 핵심 사례 목록을 출력해 저장된 [CSV](data/core_manifest.csv)와 대조:
 
@@ -48,13 +48,20 @@ python3 -m experiments.maps sample --size 21 --seed 0 --distance far
 python3 -m experiments.summarize data/raw/pilot_v1.csv
 ```
 
-7단계 본 실험은 `python3 -m experiments.measure core --output data/raw/core_v1.csv`, 8단계 크기 추가 실험은 `python3 -m experiments.measure size_extra --output data/raw/size_extra_v1.csv`로 실행한다. 기존 파일을 덮어쓰지 않는다.
+7단계 본 실험 결과는 `data/raw/core_v1.csv`와 `data/raw/core_v1.meta.json`에 있다. 다음 명령으로 저장된 결과를 다시 검사할 수 있다.
+
+```sh
+python3 -m experiments.verify core data/raw/core_v1.csv
+```
+
+8단계 크기 추가 실험은 `python3 -m experiments.measure size_extra --output data/raw/size_extra_v1.csv`로 실행한다. 기존 파일을 덮어쓰지 않는다.
 
 ## 문서
 
 - [문제 정의와 공정 비교 규칙](docs/PROJECT_SPEC.md)
 - [지도 생성 규칙과 대표 지도](docs/MAP_DESIGN.md)
 - [측정·분석 사전 규약과 예비실험](docs/MEASUREMENT_PROTOCOL.md)
+- [핵심 72개 사례 실행·검증 기록](docs/CORE_RUN.md)
 - [단계별 작업 계획](docs/WORK_PLAN.md)
 
 ## 제출 예정물
