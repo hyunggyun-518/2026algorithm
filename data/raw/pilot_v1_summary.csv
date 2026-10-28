@@ -1,0 +1,10 @@
+case_id,algorithm,median_elapsed_ns,min_elapsed_ns,max_elapsed_ns,expanded,cost
+barrier-far-101-00,astar,14809709,14724667,14927875,5312,377
+barrier-far-101-00,bidirectional_dijkstra,14895791,14894500,15101834,4783,377
+barrier-far-101-00,dijkstra,16993750,16985417,17014667,6513,377
+maze-far-101-00,astar,12580000,12474958,13027000,5017,723
+maze-far-101-00,bidirectional_dijkstra,6478583,6399459,6855292,2361,723
+maze-far-101-00,dijkstra,12219959,12197500,13555458,5231,723
+open-near-101-00,astar,559417,557209,577667,126,46
+open-near-101-00,bidirectional_dijkstra,377625,375750,410750,124,46
+open-near-101-00,dijkstra,732917,732500,742417,296,46

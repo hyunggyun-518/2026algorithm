@@ -1,0 +1,19 @@
+{
+  "protocol_version": "1",
+  "suite": "pilot",
+  "recorded_at_utc": "2026-10-28T10:04:55.109222+00:00",
+  "python": "3.13.12 (v3.13.12:1cbe4818347, Feb  3 2026, 13:36:53) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "timer": "perf_counter_ns",
+  "repeats": 3,
+  "warmups_per_algorithm_case": 1,
+  "case_order": "sha256(case-order-v1:case_id) ascending",
+  "algorithm_order": "rotate by (case_index + repeat_index) mod 3",
+  "case_ids": [
+    "barrier-far-101-00",
+    "open-near-101-00",
+    "maze-far-101-00"
+  ],
+  "core_manifest_sha256": "f12dfbac7b121895aa251d49cb581cf6b1cd75bb26e9cde7f7940e70dc224c6e",
+  "size_manifest_sha256": "a505e4a7faa68862c020ef6aa8d82b5742840ceeb7e9107dbc14ddeb9ca3213b"
+}
