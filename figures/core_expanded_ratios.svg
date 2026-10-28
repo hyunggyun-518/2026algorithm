@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-label="Core cases: paired expanded-node ratio">
+<title>Core cases: paired expanded-node ratio</title>
+<desc>Candidate divided by Dijkstra; dots show median and bars show interquartile range across 12 seeds.</desc>
+<rect width="920" height="540" fill="#ffffff"/>
+<text x="220" y="42" font-size="24" font-family="Arial" fill="#1b2b36">Core cases: paired expanded-node ratio</text>
+<text x="220" y="64" font-size="13" font-family="Arial" fill="#455a64">Ratio below 1 favors the candidate</text>
+<line x1="352.74" y1="100" x2="352.74" y2="490" stroke="#e2e8ec" stroke-width="1"/>
+<text x="352.74" y="514" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">0.4</text>
+<line x1="539.82" y1="100" x2="539.82" y2="490" stroke="#e2e8ec" stroke-width="1"/>
+<text x="539.82" y="514" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">0.6</text>
+<line x1="672.56" y1="100" x2="672.56" y2="490" stroke="#e2e8ec" stroke-width="1"/>
+<text x="672.56" y="514" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">0.8</text>
+<line x1="775.51" y1="100" x2="775.51" y2="490" stroke="#546e7a" stroke-width="2"/>
+<text x="775.51" y="514" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">1</text>
+<text x="202" y="135" text-anchor="end" font-size="15" font-family="Arial" fill="#1b2b36">open · near</text>
+<line x1="393.76" y1="121" x2="434.14" y2="121" stroke="#e08a22" stroke-width="4" stroke-linecap="round"/>
+<circle cx="415.63" cy="121" r="6" fill="#e08a22"/>
+<line x1="369.26" y1="141" x2="446.58" y2="141" stroke="#2679b5" stroke-width="4" stroke-linecap="round"/>
+<circle cx="385.75" cy="141" r="6" fill="#2679b5"/>
+<text x="202" y="191" text-anchor="end" font-size="15" font-family="Arial" fill="#1b2b36">open · far</text>
+<line x1="449.78" y1="177" x2="473.98" y2="177" stroke="#e08a22" stroke-width="4" stroke-linecap="round"/>
+<circle cx="465.82" cy="177" r="6" fill="#e08a22"/>
+<line x1="339.42" y1="197" x2="360.46" y2="197" stroke="#2679b5" stroke-width="4" stroke-linecap="round"/>
+<circle cx="346.17" cy="197" r="6" fill="#2679b5"/>
+<text x="202" y="247" text-anchor="end" font-size="15" font-family="Arial" fill="#1b2b36">barrier · near</text>
+<line x1="372.07" y1="233" x2="517.42" y2="233" stroke="#e08a22" stroke-width="4" stroke-linecap="round"/>
+<circle cx="406.27" cy="233" r="6" fill="#e08a22"/>
+<line x1="363.59" y1="253" x2="502.60" y2="253" stroke="#2679b5" stroke-width="4" stroke-linecap="round"/>
+<circle cx="421.91" cy="253" r="6" fill="#2679b5"/>
+<text x="202" y="303" text-anchor="end" font-size="15" font-family="Arial" fill="#1b2b36">barrier · far</text>
+<line x1="656.78" y1="289" x2="697.40" y2="289" stroke="#e08a22" stroke-width="4" stroke-linecap="round"/>
+<circle cx="692.11" cy="289" r="6" fill="#e08a22"/>
+<line x1="629.24" y1="309" x2="714.52" y2="309" stroke="#2679b5" stroke-width="4" stroke-linecap="round"/>
+<circle cx="650.32" cy="309" r="6" fill="#2679b5"/>
+<text x="202" y="359" text-anchor="end" font-size="15" font-family="Arial" fill="#1b2b36">maze · near</text>
+<line x1="566.85" y1="345" x2="638.71" y2="345" stroke="#e08a22" stroke-width="4" stroke-linecap="round"/>
+<circle cx="606.27" cy="345" r="6" fill="#e08a22"/>
+<line x1="481.54" y1="365" x2="601.25" y2="365" stroke="#2679b5" stroke-width="4" stroke-linecap="round"/>
+<circle cx="549.33" cy="365" r="6" fill="#2679b5"/>
+<text x="202" y="415" text-anchor="end" font-size="15" font-family="Arial" fill="#1b2b36">maze · far</text>
+<line x1="653.38" y1="401" x2="698.90" y2="401" stroke="#e08a22" stroke-width="4" stroke-linecap="round"/>
+<circle cx="665.77" cy="401" r="6" fill="#e08a22"/>
+<line x1="337.94" y1="421" x2="395.44" y2="421" stroke="#2679b5" stroke-width="4" stroke-linecap="round"/>
+<circle cx="368.49" cy="421" r="6" fill="#2679b5"/>
+<text x="530.0" y="528" text-anchor="middle" font-size="14" font-family="Arial" fill="#1b2b36">Candidate / Dijkstra (log scale)</text>
+<circle cx="220" cy="82" r="5" fill="#e08a22"/><text x="232" y="86" font-size="13" font-family="Arial" fill="#1b2b36">A*</text>
+<circle cx="282" cy="82" r="5" fill="#2679b5"/><text x="294" y="86" font-size="13" font-family="Arial" fill="#1b2b36">Bidirectional Dijkstra</text>
+</svg>

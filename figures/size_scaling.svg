@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="560" viewBox="0 0 1050 560" role="img" aria-label="Runtime by grid size">
+<title>Runtime by grid size</title>
+<desc>Median milliseconds across six seeds; 101-by-101 values are reused from the core run.</desc>
+<rect width="1050" height="560" fill="#ffffff"/>
+<text x="70" y="42" font-size="24" font-family="Arial" fill="#1b2b36">Runtime by grid size</text>
+<text x="70" y="64" font-size="13" font-family="Arial" fill="#455a64">Far goal · median across 6 matched seeds · log runtime axis</text>
+<text x="75" y="96" font-size="18" font-family="Arial" fill="#1b2b36">Open</text>
+<line x1="75" y1="421.17" x2="455" y2="421.17" stroke="#e2e8ec"/>
+<text x="67" y="425.17" text-anchor="end" font-size="12" font-family="Arial" fill="#455a64">3</text>
+<line x1="75" y1="321.46" x2="455" y2="321.46" stroke="#e2e8ec"/>
+<text x="67" y="325.46" text-anchor="end" font-size="12" font-family="Arial" fill="#455a64">10</text>
+<line x1="75" y1="230.47" x2="455" y2="230.47" stroke="#e2e8ec"/>
+<text x="67" y="234.47" text-anchor="end" font-size="12" font-family="Arial" fill="#455a64">30</text>
+<line x1="75" y1="130.76" x2="455" y2="130.76" stroke="#e2e8ec"/>
+<text x="67" y="134.76" text-anchor="end" font-size="12" font-family="Arial" fill="#455a64">100</text>
+<text x="75.00" y="474" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">51</text>
+<text x="264.32" y="474" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">101</text>
+<text x="455.00" y="474" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">201</text>
+<polyline points="75.00,363.46 264.32,253.99 455.00,129.85" fill="none" stroke="#455a64" stroke-width="3"/>
+<circle cx="75.00" cy="363.46" r="5" fill="#455a64"/>
+<circle cx="264.32" cy="253.99" r="5" fill="#455a64"/>
+<circle cx="455.00" cy="129.85" r="5" fill="#455a64"/>
+<polyline points="75.00,407.48 264.32,305.83 455.00,175.32" fill="none" stroke="#e08a22" stroke-width="3"/>
+<circle cx="75.00" cy="407.48" r="5" fill="#e08a22"/>
+<circle cx="264.32" cy="305.83" r="5" fill="#e08a22"/>
+<circle cx="455.00" cy="175.32" r="5" fill="#e08a22"/>
+<polyline points="75.00,426.17 264.32,318.64 455.00,190.81" fill="none" stroke="#2679b5" stroke-width="3"/>
+<circle cx="75.00" cy="426.17" r="5" fill="#2679b5"/>
+<circle cx="264.32" cy="318.64" r="5" fill="#2679b5"/>
+<circle cx="455.00" cy="190.81" r="5" fill="#2679b5"/>
+<text x="265.0" y="502" text-anchor="middle" font-size="14" font-family="Arial" fill="#1b2b36">Grid width and height (cells)</text>
+<text x="585" y="96" font-size="18" font-family="Arial" fill="#1b2b36">Barrier</text>
+<line x1="585" y1="433.21" x2="965" y2="433.21" stroke="#e2e8ec"/>
+<text x="577" y="437.21" text-anchor="end" font-size="12" font-family="Arial" fill="#455a64">3</text>
+<line x1="585" y1="320.20" x2="965" y2="320.20" stroke="#e2e8ec"/>
+<text x="577" y="324.20" text-anchor="end" font-size="12" font-family="Arial" fill="#455a64">10</text>
+<line x1="585" y1="217.07" x2="965" y2="217.07" stroke="#e2e8ec"/>
+<text x="577" y="221.07" text-anchor="end" font-size="12" font-family="Arial" fill="#455a64">30</text>
+<text x="585.00" y="474" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">51</text>
+<text x="774.32" y="474" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">101</text>
+<text x="965.00" y="474" text-anchor="middle" font-size="13" font-family="Arial" fill="#455a64">201</text>
+<polyline points="585.00,411.94 774.32,272.85 965.00,133.17" fill="none" stroke="#455a64" stroke-width="3"/>
+<circle cx="585.00" cy="411.94" r="5" fill="#455a64"/>
+<circle cx="774.32" cy="272.85" r="5" fill="#455a64"/>
+<circle cx="965.00" cy="133.17" r="5" fill="#455a64"/>
+<polyline points="585.00,423.00 774.32,284.78 965.00,146.15" fill="none" stroke="#e08a22" stroke-width="3"/>
+<circle cx="585.00" cy="423.00" r="5" fill="#e08a22"/>
+<circle cx="774.32" cy="284.78" r="5" fill="#e08a22"/>
+<circle cx="965.00" cy="146.15" r="5" fill="#e08a22"/>
+<polyline points="585.00,417.36 774.32,279.88 965.00,142.83" fill="none" stroke="#2679b5" stroke-width="3"/>
+<circle cx="585.00" cy="417.36" r="5" fill="#2679b5"/>
+<circle cx="774.32" cy="279.88" r="5" fill="#2679b5"/>
+<circle cx="965.00" cy="142.83" r="5" fill="#2679b5"/>
+<text x="775.0" y="502" text-anchor="middle" font-size="14" font-family="Arial" fill="#1b2b36">Grid width and height (cells)</text>
+<text x="20" y="280" transform="rotate(-90 20 280)" text-anchor="middle" font-size="14" font-family="Arial" fill="#1b2b36">Median runtime (ms, log scale)</text>
+<line x1="280" y1="535" x2="306" y2="535" stroke="#455a64" stroke-width="3"/><text x="315" y="540" font-size="13" font-family="Arial" fill="#1b2b36">Dijkstra</text>
+<line x1="500" y1="535" x2="526" y2="535" stroke="#e08a22" stroke-width="3"/><text x="535" y="540" font-size="13" font-family="Arial" fill="#1b2b36">A*</text>
+<line x1="720" y1="535" x2="746" y2="535" stroke="#2679b5" stroke-width="3"/><text x="755" y="540" font-size="13" font-family="Arial" fill="#1b2b36">Bidirectional Dijkstra</text>
+</svg>
